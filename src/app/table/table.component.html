@@ -1,0 +1,33 @@
+  <div class="col-sm-offset-3 col-sm-6">
+    <div class="row" style="text-align: center;">
+      <button style="margin-bottom: 10px;" *ngIf="!isClick" (click)="checkAddClick()"  class="btn btn-warning">เพิ่ม</button>
+      <div *ngIf="isClick" style="width:100%; margin-bottom: 10px; ">
+        <div class="input-group" style="width:auto;">
+          <input class="form-control"  #inputDetail type="text" />
+          <div class="input-group-btn">
+            <button class="btn btn-default "><i class="fa fa-plus" aria-hidden="true"></i></button>
+          </div>
+        </div>
+    </div>
+    <div class="row">
+      <table class="table table-striped">
+        <thead>
+          <tr class="success">
+            <th>Detail</th>
+            <th>Amount</th>
+          </tr>      
+        </thead>
+        <tbody>
+          <tr>
+            <td>กินข้าว</td>
+            <td>50</td>
+          </tr>
+          <tr>
+            <td>กินขนม</td>
+            <td>2000</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
+  </div> 
